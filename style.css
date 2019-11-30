@@ -57,6 +57,10 @@ img {
 }
 
 @media (max-width: 992px) {
+  body {
+    font-size: 0.9rem;
+  }
+
   #card-container {
     width: 100%;
     display: grid;
@@ -71,6 +75,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
+
   #card-container {
     grid-gap: 0.5rem;
   }
@@ -81,6 +89,10 @@ img {
 }
 
 @media (max-width: 576px) {
+  body {
+    font-size: 0.7rem;
+  }
+
   #card-container {
     grid-gap: 0.1rem;
   }
