@@ -28,4 +28,4 @@ I chose to make a tribute page for the Rubik's Cube because it has always been o
 
 ## Final Result
 
-Check out the page (here)[https://kathleengraham.github.io/fccTributePage].
+Check out the page [here](https://kathleengraham.github.io/fccTributePage).
