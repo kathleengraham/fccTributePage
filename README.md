@@ -12,13 +12,17 @@ I chose to make a tribute page for the Rubik's Cube because it has always been o
 
 <details>
 <summary>1</summary>
-
+</details>
+<details>
 <summary>2</summary>
-
+</details>
+<details>
 <summary>3</summary>
-
+</details>
+<details>
 <summary>4</summary>
-
+</details>
+<details>
 <summary>5</summary>
 </details>
 
