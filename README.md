@@ -7,15 +7,15 @@ This Tribute Page passes the following user stories provided in freeCodeCamp's R
 <details>
 <summary>User Stories</summary>
 <ol>
-<li>My tribute page should have an element with a corresponding `id="main"`, which contains all other elements.</li>
-<li>I should see an element with a corresponding `id="title"`, which contains a string (i.e. text) that describes the subject of the tribute page.</li>
-<li>I should see a div element with a corresponding `id="img-div"`.</li>
-<li>Within the `img-div` element, I should see an img element with a corresponding `id="image"`.</li>
-<li>Within the `img-div` element, I should see an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `img-div`.</li>
-<li>I should see an element with a corresponding `id="tribute-info"`, which contains textual content describing the subject of the tribute page.</li>
-<li>I should see an `a` element with a corresponding `id="tribute-link"`, which links to an outside site that contains additional information about the subject of the tribute page.</li>
-<li>The `img` element should responsively resize, relative to the width of its parent element, without exceeding its original size.</li>
-<li>The `img` element should be centered within its parent element.</li>
+<li>My tribute page should have an element with a corresponding <code>id="main"</code>, which contains all other elements.</li>
+<li>I should see an element with a corresponding <code>id="title"</code>, which contains a string (i.e. text) that describes the subject of the tribute page.</li>
+<li>I should see a div element with a corresponding <code>id="img-div"</code>.</li>
+<li>Within the <code>img-div</code> element, I should see an img element with a corresponding <code>id="image"</code>.</li>
+<li>Within the <code>img-div</code> element, I should see an element with a corresponding <code>id="img-caption"</code> that contains textual content describing the image shown in <code>img-div</code>.</li>
+<li>I should see an element with a corresponding <code>id="tribute-info"</code>, which contains textual content describing the subject of the tribute page.</li>
+<li>I should see an <code>a</code> element with a corresponding <code>id="tribute-link"</code>, which links to an outside site that contains additional information about the subject of the tribute page.</li>
+<li>The <code>img</code> element should responsively resize, relative to the width of its parent element, without exceeding its original size.</li>
+<li>The <code>img</code> element should be centered within its parent element.</li>
 </ol>
 </details>
 
