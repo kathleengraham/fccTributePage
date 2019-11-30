@@ -21,3 +21,7 @@ I chose to make a tribute page for the Rubik's Cube because it has always been o
 
 <summary>5</summary>
 </details>
+
+## Final Result
+
+Check out the page (here)[https://kathleengraham.github.io/fccTributePage].
