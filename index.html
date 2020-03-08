@@ -4,7 +4,7 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <title>fCC: Tribute Page</title>
 </head>
@@ -27,62 +27,74 @@
       <p>You will still need algorithms, but it's easier to understand these algorithms if you know what you're solving for. I'll give you a quick tip: it's not one face color at a time! I break it down to three main steps: bottom face and row, middle row, and top row and face. Let's take a closer look at the algorithms only in reference to which part of the cube for which we're trying to solve.</p>
   
 
-    <div id="title-container">
-      <h3>1. Bottom Face and Row</h3>
-      <h3>2. Middle Row</h3>
-      <h3>3. Top Row and Face</h3>
-    </div>
-      <!-- CARD SECTION -->
+      
+    <!-- CARD SECTION -->
     <div id="card-container">
 
       <!-- CARD ONE -->
+      <div class="title-div">
+        <h3>1. Bottom Face and Row</h3>
         <div class="card">
           <h4>A. Bottom Face</h4>
           <ul>
             <li>Cross: The side of the ends of the green cross should match their corresponding sides.</li>
           </ul>
           <p class="card-body">I usually start with the green side. I don't use any algorithms to get to this point. But I know there are some. If I have time, I will come back and add those above.</p>
-          <img class="cube" src="green_cross.png">
+          <img class="cube" src="images/green_cross.png">
           <h4>B. Bottom Row</h4>
           <ul>
             <li>Corners: As you get your corners, you will see the entire green side completed along with the bottom row of each corresponding side.</li>
           </ul>
           <p class="card-body">Completing the entire green side in this way means that you would also complete the entire bottom row of the yellow, white, red, and orange sides (yellow and orange shown as an example).</p>
-          <img class="cube" src="green_side.png">
+          <img class="cube" src="images/green_side.png">
         </div>
+      </div>
 
-        <!-- CARD TWO -->
+      <!-- CARD TWO -->
+      <div class="title-div">
+        <h3>2. Middle Row</h3>
         <div class="card">
           <h4>Scenario 1</h4>
           <ul>
             <li>Middle corner piece to the left: U' L' U L U F U' F'</li>
           </ul>
           <p class="card-body">In order to complete the middle row, you should move a corner piece of the middle row from the top as long as it has the correct colors. But there is a separate algorithm depending on which way you are moving the piece, left or right. Let's start with left.</p>
-          <img class="cube" src="left_middle_corner.png">
+          <img class="cube" src="images/left_middle_corner.png">
           <h4>Scenario 2</h4>
           <ul>
             <li>Middle corner piece to the right: U R U' R' U' F' U F</li>
           </ul>
           <p class="card-body">The second scenario is very similar, but of course is solving for the corner piece of the middle row from the top but moving it to the right instead of the left.</p>
-          <img class="cube" src="right_middle_corner.png">
+          <img class="cube" src="images/right_middle_corner.png">
         </div>
+      </div>
 
-        <!-- CARD THREE -->
+      <!-- CARD THREE -->
+      <div class="title-div">
+        <h3>3. Top Row and Face</h3>
         <div class="card">
           <h4>Top Row and Face</h4>
           <ul>
             <li>Top Cross: F R U R' U' F'</li>
+          </ul>
+          <p class="card-body">This part is trickist portion in my opinion. There are two main steps to getting this section complete, but they could be performed multiple times to get the proper result. Only one algorithm is used to get the top cross, but depending on what pattern is already there, you will need to use the algorithm one, two, or three times.</p>
+          <div id="top-cross-row">
+            <img class="cube" src="images/blue_cross_1.png"><p class="blue-cross">1</p>
+            <img class="cube" src="images/blue_cross_2.png"><p class="blue-cross">2</p>
+            <img class="cube" src="images/blue_cross_3.png"><p class="blue-cross">3</p>
+          </div>
+          <ul>
             <li>Top Row Middle Pieces: R U R' U R U U R'</li>
           </ul>
-          <p class="card-body">This part is trickist portion in my opinion. There are two steps to getting this section complete. Only one algorithm is used to get the top cross, but depending on what pattern is already there, you will need to use the algorithm possibly one, two, or three times. But even after you get the top cross, their corresponding middle pieces on the top rows of the side faces might not have matching color pieces yet. So there is another alogrithm for this case.</p>
-          <img class="cube" src="2.png">
+          <p class="card-body">Even after you get the top cross, their corresponding middle pieces on the top rows of the side faces might not have matching color pieces yet. So there is another alogrithm for this case.</p>
+          <img class="cube" src="images/x.png">
           <h4>Top Row and Face</h4>
           <ul>
             <li>Colored corner pieces: U R U' L' U R' U' L</li>
             <li>Matching the colors of corner pieces: R' D' R D</li>
           </ul>
           <p class="card-body">There are two steps to solving the corners of the top row. First, we must get the colors of the corner pieces in the right place, even if they are not matching their sides yet. Second, we can use the simplest algorithm yet to get these final corner pieces to have all their colors matching.</p>
-          <img class="cube" src="3.png">
+          <img class="cube" src="images/3.png">
         </div>
       </div><br>
       <p id="learn">Feel free to learn more about the Rubik's Cube on <a id="tribute-link" href="https://en.wikipedia.org/wiki/Rubik%27s_Cube" target="_blank">Wikipedia</a>.</p>

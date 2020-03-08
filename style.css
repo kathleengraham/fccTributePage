@@ -58,6 +58,18 @@ h4 {
   text-align: justify;
 }
 
+#top-cross-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.blue-cross {
+  font-size: 0.75rem;
+}
+
 @media (max-width: 992px) {
   body {
     font-size: 0.9rem;
