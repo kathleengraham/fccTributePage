@@ -23,88 +23,114 @@
     </div>
     <div id="tribute-info">
       <h3>How to Solve a Rubik's Cube:</h3>
-      <p>A lot of people think they don't have what it takes to solve a Rubik's Cube. They couldn't be more wrong! It's all about perspective. The way I learned how to solve a Rubik's cube was to memorize algorithms, but at the time, I didn't truly understand all of it. After practice, I started to notice the patterns, and eventually I realized I could solve it no matter how it was given to me in the first place.</p>
+      <p>A lot of people think they don't have what it takes to solve a Rubik's Cube. They couldn't be more wrong! It's all about perspective. The way I learned how to solve a Rubik's cube was to memorize algorithms, but at the time, I didn't truly understand all of it. After practice, I started to notice the patterns, and eventually I realized I could solve it no matter how it was given to me in the first place. The top row is by far the hardest solve with different alorithms only useful for certain patterns currently on the cube. But these are still patterns that you can get used to as well.</p>
       <p>You will still need algorithms, but it's easier to understand these algorithms if you know what you're solving for. I'll give you a quick tip: it's not one face color at a time! I break it down to three main steps: bottom face and row, middle row, and top row and face. Let's take a closer look at the algorithms only in reference to which part of the cube for which we're trying to solve.</p>
   
+    <div id="instructions">
+      <!-- main portion of instructions -->
+      <!-- FIRST TWO CARDS SECTION -->
+      <div id="first-card-container">
 
-    <!-- main portion of instructions -->
-    <!-- CARD SECTION -->
-    <div id="card-container">
-
-      <!-- CARD ONE -->
-      <div class="title-div">
-        <h3>1. Bottom Face and Row</h3>
-        <div class="card">
-          <h4>A. Bottom Face</h4>
-          <ul>
-            <li>Cross: The side of the ends of the green cross should match their corresponding sides.</li>
-          </ul>
-          <p class="card-body">I usually start with the green side. I don't use any algorithms to get to this point. But I know there are some. If I have time, I will come back and add those above.</p>
-          <img class="cube" src="images/green_cross.png">
-          <h4>B. Bottom Row</h4>
-          <ul>
-            <li>Corners: As you get your corners, you will see the entire green side completed along with the bottom row of each corresponding side.</li>
-          </ul>
-          <p class="card-body">Completing the entire green side in this way means that you would also complete the entire bottom row of the yellow, white, red, and orange sides (yellow and orange shown as an example).</p>
-          <img class="cube" src="images/green_side.png">
+        <!-- CARD ONE -->
+        <div class="title-div">
+          <h3>1. Bottom Face and Row</h3>
+          <div class="card">
+            <h4>A. Bottom Face</h4>
+            <ul>
+              <li>Cross: The side of the ends of the green cross should match their corresponding sides.</li>
+            </ul>
+            <p class="card-body">I usually start with the green side. I don't use any algorithms to get to this point. But I know there are some. If I have time, I will come back and add those above.</p>
+            <img class="cube" src="images/green_cross.png">
+            <h4>B. Bottom Row</h4>
+            <ul>
+              <li>Corners: As you get your corners, you will see the entire green side completed along with the bottom row of each corresponding side.</li>
+            </ul>
+            <p class="card-body">Completing the entire green side in this way means that you would also complete the entire bottom row of the yellow, white, red, and orange sides.</p>
+            <img class="cube" src="images/green_side.png">
+            <p class="card-body">Yellow and orange sides are shown as an example.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- CARD TWO -->
-      <div class="title-div">
-        <h3>2. Middle Row</h3>
-        <div class="card">
-          <h4>Scenario 1</h4>
-          <ul>
-            <li>Middle corner piece to the left: U' L' U L U F U' F'</li>
-          </ul>
-          <p class="card-body">In order to complete the middle row, you should move a corner piece of the middle row from the top as long as it has the correct colors. But there is a separate algorithm depending on which way you are moving the piece, left or right. Let's start with left.</p>
-          <img class="cube" src="images/left_middle_corner.png">
-          <h4>Scenario 2</h4>
-          <ul>
-            <li>Middle corner piece to the right: U R U' R' U' F' U F</li>
-          </ul>
-          <p class="card-body">The second scenario is very similar, but of course is solving for the corner piece of the middle row from the top but moving it to the right instead of the left.</p>
-          <img class="cube" src="images/right_middle_corner.png">
-        </div>
-        <div>
-          <p>
-            Repeat this for all color faces that need the middle row pieces to match with corresponding sides.
-          </p>
+        <!-- CARD TWO -->
+        <div class="title-div">
+          <h3>2. Middle Row</h3>
+          <div class="card">
+            <h4>Scenario 1</h4>
+            <ul>
+              <li>Middle corner piece to the left: U' L' U L U F U' F'</li>
+            </ul>
+            <p class="card-body">In order to complete the middle row, you should move a corner piece of the middle row from the top as long as it has the correct colors. But there is a separate algorithm depending on which way you are moving the piece, left or right. Let's start with left.</p>
+            <img class="cube" src="images/left_middle_corner.png">
+            <h4>Scenario 2</h4>
+            <ul>
+              <li>Middle corner piece to the right: U R U' R' U' F' U F</li>
+            </ul>
+            <p class="card-body">The second scenario is very similar, but of course is solving for the corner piece of the middle row from the top but moving it to the right instead of the left.</p>
+            <img class="cube" src="images/right_middle_corner.png">
+            <p class="card-body">Repeat this for all color faces that need the middle row pieces to match with corresponding sides.</p>
+          </div>
         </div>
       </div>
 
       <!-- CARD THREE -->
       <div class="title-div">
-        <h3>3. Top Row, Face, and Corners</h3>
-        <div class="card">
-          <h4>Top Row and Face</h4>
-          <ul>
-            <li>Top Cross: F R U R' U' F'</li>
-          </ul>
-          <p class="card-body">This part is trickist portion in my opinion. There are two main steps to getting this section complete, but they could be performed multiple times to get the proper result. Only one algorithm is used to get the top cross, but depending on what pattern is already there, you will need to use the algorithm one, two, or three times.</p>
-          <div id="top-cross-row">
-            <img class="cube" src="images/blue_cross_1.png"><p class="blue-cross">1</p>
-            <img class="cube" src="images/blue_cross_2.png"><p class="blue-cross">2</p>
-            <img class="cube" src="images/blue_cross_3.png"><p class="blue-cross">3</p>
+        <h3>3. Top Row, Middle Pieces, and Corners</h3>
+
+        <!-- Split into three columns inside the container border -->
+        <div id="second-card-container">
+          <div class="big-second-card-section">
+            <div class="card">
+              <h4>A. Top Cross</h4>
+              <ul>
+                <li>Top Cross: F R U R' U' F'</li>
+              </ul>
+              <p class="card-body">This part is trickist portion in my opinion. There are two main steps to getting this section complete, but they could be performed multiple times to get the proper result. Only one algorithm is used to get the top cross, but depending on what pattern is already there, you will need to use the algorithm one, two, or three times.</p>
+              <div id="top-cross-row">
+                <img class="cube1" src="images/blue_cross_1.png"><p class="blue-cross">Algorithm 3x</p>
+                <img class="cube1" src="images/blue_cross_2.png"><p class="blue-cross">Algorithm 2x</p>
+                <img class="cube1" src="images/blue_cross_3.png"><p class="blue-cross">Algorithm 1x</p>
+              </div>
+            </div>
           </div>
-          <ul>
-            <li>Top Row Middle Pieces: R U R' U R U U R'</li>
-          </ul>
-          <p class="card-body">Even after you get the top cross, their corresponding middle pieces on the top rows of the side faces might not have matching color pieces yet. So there is another alogrithm for this case.</p>
-          <img class="cube" src="images/top_row_dot.png">
-          <h4>Top Corners</h4>
-          <ul>
-            <li>Colored corner pieces: U R U' L' U R' U' L</li>
-            <li>Matching the colors of corner pieces: R' D' R D</li>
-          </ul>
-          <p class="card-body">There are two steps to solving the corners of the top row. First, we must get the colors of the corner pieces in the right place, even if they are not matching their sides yet. Second, we can use the simplest algorithm yet to get these final corner pieces to have all their colors matching.</p>
-          <img class="cube" src="images/top-row-corners.png">
+          <div class="big-second-card-section">
+            <div class="card">
+              <ul>
+                <li>B. Top Row Middle Pieces: R U R' U R U U R'</li>
+              </ul>
+              <p class="card-body">Even after you get the top cross, their corresponding middle pieces on the top rows of the side faces might not have matching color pieces yet. So there is another alogrithm for this case.</p>
+              <img class="cube" src="images/top_row_middle_pieces.png">
+            </div>
+          </div>
+          <div class="big-second-card-section">
+            <div class="card">
+              <h4>C. Top Corners</h4>
+              <ul>
+                <li>Colored corner pieces: U R U' L' U R' U' L</li>
+                <li>Matching the colors of corner pieces: R' D' R D</li>
+              </ul>
+              <p class="card-body">There are two steps to solving the corners of the top row. First, we must get the colors of the corner pieces in the right place, even if they are not matching their sides yet. Second, we can use the simplest algorithm yet to get these final corner pieces to have all their colors matching.</p>
+              <img class="cube" src="images/top_corners.png">
+            </div>
+          </div>
         </div>
-      </div><br>
-      <p id="learn">Feel free to learn more about the Rubik's Cube on <a id="tribute-link" href="https://en.wikipedia.org/wiki/Rubik%27s_Cube" target="_blank">Wikipedia</a>.</p>
+      </div>
+    <br>
+
+    <!-- bottom portion -->
+    <p id="learn">Feel free to learn more about the Rubik's Cube on <a id="tribute-link" href="https://en.wikipedia.org/wiki/Rubik%27s_Cube" target="_blank">Wikipedia</a>.</p>
+
+    <div id='social'>
+      <a href='https://github.com/kathleengraham/fccTributePage' target='_blank' rel='noopener noreferrer'><img id='gh-icon' src='images/Octocat.jpg'></a>
     </div>
+
+    <!-- footer -->
+    <footer>
+      <div class='footer'>
+        Made with &#10084; and <a id='fCC-link' href='https://www.freecodecamp.org/' target='_blank' rel='noopener noreferrer'>freeCodeCamp</a>&nbsp;&nbsp;|&nbsp;&nbsp;Kathleen Graham, 2020&nbsp;&nbsp;
+      </div>
+    </footer>
   </main>
+
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

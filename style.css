@@ -1,12 +1,13 @@
 body {
-  font-size: 16px;
+  font-size: 18px;
+  color: #0A364A;
 }
 
 #main {
   margin: 3rem 10rem 5rem 10rem;
 }
 
-#title, #learn, h3 {
+#title, #learn, h3, #social {
   text-align: center;
 }
 
@@ -30,15 +31,30 @@ h4 {
   margin: 0 auto;
 }
 
-#title-container {
+.cube1 {
+  width: 25%;
+  display: block;
+  height: auto;
+  justify-self: end;
+}
+
+#instructions {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
   grid-gap: 5rem;
 }
 
-#card-container {
+#first-card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5rem;
+}
+
+#second-card-container {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -61,16 +77,53 @@ h4 {
 #top-cross-row {
   width: 100%;
   display: grid;
-  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 2rem;
 }
 
 .blue-cross {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
-@media (max-width: 992px) {
+#tribute-link:link,
+#tribute-link:visited,
+#tribute-link:hover,
+#tribute-link:active {
+    color: black !important;
+}
+
+#gh-icon {
+  width: 50px;
+  height: 50px;
+  background-size: 100%;
+}
+
+/* ************************************* FOOTER ************************************** */
+
+footer {
+  background-color: #0A364A;
+  color: white; 
+  font-size: 11pt; 
+  text-align: center; 
+  vertical-align: middle;
+  line-height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#fCC-link:link,
+#fCC-link:visited,
+#fCC-link:hover,
+#fCC-link:active {
+    color: white !important;
+}
+
+/* ************************************* RESPONSIVENESS ************************************** */
+
+@media (max-width: 1350px) {
   body {
     font-size: 0.9rem;
   }
@@ -86,6 +139,7 @@ h4 {
   #main {
     margin: 2.5rem 7rem 7rem 7rem;
   }
+  
 }
 
 @media (max-width: 768px) {
