@@ -27,21 +27,7 @@ I chose to make a tribute page for the Rubik's Cube because it has always been o
 
 ## Steps
 
-<details>
-<summary>1</summary>
-</details>
-<details>
-<summary>2</summary>
-</details>
-<details>
-<summary>3</summary>
-</details>
-<details>
-<summary>4</summary>
-</details>
-<details>
-<summary>5</summary>
-</details>
+It feels like I worked on this page longer than my portfolio page when I was in a Data Science Boot Camp. I have worked on it off and on, but I made a point to not depend on frameworks like Bootstrap to help make the responsive design quicker. Even though I love Bootstrap a lot, I wanted to push myself to think and create a design that's responsive using CSS Grid. I really like CSS Grid too, but it takes me a little longer to make sense of all the different parts with in certain media queries. This current version is not complete because I didn't design mobile-first, but after much hard work, I have the page for the largest screen working and looking right. I think I could finish the media queries in a later go.
 
 ## Final Result
 
