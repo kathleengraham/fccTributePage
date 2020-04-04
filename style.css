@@ -90,12 +90,7 @@ h4 {
 #tribute-link:visited,
 #tribute-link:hover,
 #tribute-link:active {
-    color: black !important;
-}
-
-#social-div {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  color: black !important;
 }
 
 #social-link-section {
@@ -110,7 +105,10 @@ h4 {
   width: 50px;
   height: 50px;
   background-size: 100%;
-  align-self: center;
+}
+
+.social-links {
+  justify-self: center;
 }
 
 /* ************************************* FOOTER ************************************** */
@@ -137,12 +135,13 @@ footer {
 
 /* ************************************* RESPONSIVENESS ************************************** */
 
+/************************* 1350 ******************************* */
 @media (max-width: 1350px) {
   body {
     font-size: 0.9rem;
   }
 
-  #card-container {
+  #second-card-container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -153,33 +152,81 @@ footer {
   #main {
     margin: 2.5rem 7rem 7rem 7rem;
   }
+
+  .card {
+    margin-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
   
 }
+
+
+/************************* 1100 ******************************* */
+
+@media (max-width: 1100px) {
+
+  #instructions {
+    grid-gap: 3.25rem;
+  }
+
+  #first-card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  .card {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+/************************* 768 ******************************* */
 
 @media (max-width: 768px) {
   body {
     font-size: 0.8rem;
   }
 
-  #card-container {
+  #first-card-container, #second-card-container {
     grid-gap: 0.5rem;
   }
   
   #main {
     margin: 2rem 4rem 4rem 4rem;
   }
+
+  .card {
+    margin-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  #instructions {
+    grid-gap: 2.5rem;
+  }
 }
+
+
+/************************* 576 ******************************* */
 
 @media (max-width: 576px) {
   body {
     font-size: 0.7rem;
   }
+  #instructions {
+    grid-gap: 1.5rem;
+  }
 
-  #card-container {
+  #first-card-container, #second-card-container {
     grid-gap: 0.1rem;
   }
   
   #main {
     margin: 1rem;
+  }
+
+  .card {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
